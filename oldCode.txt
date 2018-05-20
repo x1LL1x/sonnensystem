@@ -1,0 +1,128 @@
+aus main():
+vector<long double> valPl(4);
+	
+	
+	Datum now, datPerihel(2018, 3, 5), dateX;
+	Planet posVenus("Merkur", 5.790917567E10, 4.697373746E10, 49.49, 0.20563069, datPerihel);
+
+	dateX.setDate(2018,5,28);
+	cout << "Perihel Datum: " << datPerihel.getTag() <<"  "<< datPerihel.getMonat() <<"  "<< datPerihel.getJahr() << endl;
+	cout << "aktuelles Datum: \t"; 	now.printDate("actual");
+	cout << "Objekt irgendwann: \t"; dateX.printDate("actual");
+	cout << "zu bestimmendes Datum (dateX): \t"; dateX.printDate("progress");
+
+
+/*
+	double calcPhi();
+	double calcPhi(int);														//Berechnung des Winkels in Grad
+	double calcRadius();														//Berechnung des Radius in Abhängigkeit von phi
+	double calcDistance(const std::vector<double>, const std::vector<double>);
+	std::vector<double> getKoordinaten();										//Rückgabe der Kartesischen Koordinaten
+	std::vector<double> getKoordinaten(Datum date);
+	*/
+
+
+//pBahn::pBahn(long double aChse, double eXzentr, double umlzT) { }
+//pBahn::pBahn(long double aChse, double eXzentr, double umlzT, unsigned int initTime = 0) { }
+//pBahn::pBahn(long double aChse, double eXzentr, double umlzT, unsigned int initTime, Datum datePerihel)
+//	: a(aChse), epsilon(eXzentr), T(umlzT) {																		//Konstruktor
+//	this->initTime = diffTime(datePerihel);
+//	cout << "Anfangszeit im Konstruktor: " << initTime << endl;
+//}
+//
+//double pBahn::calcPhi() {
+//		return ( initTime / T ) * 360;	
+//}
+//
+//double pBahn::calcPhi(int deltaT) {																				//Berechnung des Winkels in Grad
+//	return ( (initTime+deltaT) / T ) * 360; 	
+//}
+//
+//double pBahn::calcRadius() {																						//Berechnung des Radius in Abhängigkeit von phi
+//	if(deltaT==0) { return ( a*(1-epsilon*epsilon) ) / ( 1 + epsilon*cos(calcPhi()*PI/180.0) );	}
+//	else { return ( a*(1-epsilon*epsilon) ) / ( 1 + epsilon*cos(calcPhi(deltaT)*PI/180.0) ); }
+//}
+
+/*
+double pBahn::calcDistance(const std::vector<double> pos1, const std::vector<double> pos2) {
+	return sqrt ( double (pow( double(pos1[0]-pos2[0]), 2.0) + pow( double(pos1[1]-pos2[1]), 2.0)) );
+	
+}
+ 
+
+vector<double> pBahn::getKoordinaten() {																			//Rückgabe des Vektors in kartesischen Koordinaten
+	vector<double> kartKoord(2);
+	kartKoord[0] = calcRadius() * (cos(0*PI/180)*cos( calcPhi()*PI/180 ) - sin(0*PI/180)*sin( calcPhi()*PI/180 ));
+	kartKoord[1] = calcRadius() * (sin(0*PI/180)*cos( calcPhi()*PI/180 ) + cos(0*PI/180)*sin( calcPhi()*PI/180 ));
+	return kartKoord;	
+}
+
+std::vector<double> pBahn::getKoordinaten(Datum date) {
+	deltaT = diffTime(date);
+	vector<double> kartKoord(2);
+	kartKoord[0] = calcRadius() * ( (cos(0*PI/180)*cos( calcPhi(deltaT)*PI/180 ) - sin(0*PI/180)*sin( calcPhi(deltaT)*PI/180 )) );
+	kartKoord[1] = calcRadius() * ( (sin(0*PI/180)*cos( calcPhi(deltaT)*PI/180 ) + cos(0*PI/180)*sin( calcPhi(deltaT)*PI/180 )) );
+	return kartKoord;
+}
+*/
+
+
+
+Vektor-Iterator:
+/*
+	vector< vector<unsigned short> > jahr;
+	vector< vector<unsigned short> > schaltjahr;
+	vector<unsigned short> month;
+
+	for(unsigned short m = 0; m < 7; ++m) {
+		if( (m+1)%2 == 1 ) {
+			for(unsigned short d=0; d<31; ++d) { month.push_back(d+1); }
+		}else if(m==1) { 
+			for(unsigned short d=0; d<28; ++d) { month.push_back(d+1); }
+		}else {
+			for(unsigned short d=0; d<30; ++d) { month.push_back(d+1); }
+		}
+		jahr.push_back(month);
+		month = {};
+	}
+
+	for(unsigned short m = 0; m < 7; ++m) {
+		if( (m+1)%2 == 1 ) {
+			for(unsigned short d=0; d<31; ++d) { month.push_back(d+1); }
+		}else if(m==1) { 
+			for(unsigned short d=0; d<29; ++d) { month.push_back(d+1); }
+		}else {
+			for(unsigned short d=0; d<30; ++d) { month.push_back(d+1); }
+		}
+		schaltjahr.push_back(month);
+		month = {};
+	}
+
+
+
+	for(unsigned short m = 7; m < 12; ++m) {
+		if( (m+1)%2 == 0 ) {
+			for(unsigned short d=0; d<31; ++d) { month.push_back(d+1); }			
+		}else {
+			for(unsigned short d=0; d<30; ++d) { month.push_back(d+1); }
+		}
+		jahr.push_back(month);
+		schaltjahr.push_back(month);
+		month={};
+	}
+
+
+
+	for( auto const &m : jahr) {
+		for(unsigned short d : m) { cout << d << " "; }
+		cout << endl;
+	} cout << endl;
+
+	for( auto const &m : schaltjahr) {
+		for(unsigned short d : m) { cout << d << " "; }
+		cout << endl;
+	}
+	*/
+
+
+

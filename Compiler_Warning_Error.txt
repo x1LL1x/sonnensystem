@@ -1,0 +1,6 @@
+ 
+It's simple to get rid of this problem.
+
+    1. Go to your VS context menu Project>Properties.
+    2. Click Configuration>Properties>C/C++>Preprocessor.
+    3. Edit Preprocessor Definitions and add _CRT_SECURE_NO_WARNINGS last empty line.

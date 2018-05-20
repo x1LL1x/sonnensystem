@@ -1,0 +1,195 @@
+string param = "actual";
+	date1.printDate(param);
+	date1.setprogressDate(2021, 7, 30);
+	date1.printDate("progress");
+	cout << "Tage von ";
+	date1.printDate("actual"); 
+	cout << " bis "; 
+	date1.printDate("progress"); 
+	cout << testTime.diffTime(date1) << "Tage " << endl;
+	(date1.istSchaltjahr(date1))?(cout<<"ist ein Schaltjahr\n"):(cout<<"ist kein Schaltjahr" << endl);
+
+
+206.705,0
+203.609,37.2785
+194.369,73.6423
+179.141,108.175
+158.189,139.96
+131.906,168.084
+100.824,191.649
+65.6374,209.797
+27.2161,221.734
+-13.3845,226.779
+-54.9259,224.413
+-96.0052,214.338
+-135.096,196.54
+-170.614,171.337
+-201.003,139.419
+-224.845,101.855
+-240.967,60.0586
+-248.547,15.7241
+-247.189,-29.2802
+-236.966,-73.039
+-218.406,-113.724
+-192.449,-149.716
+-160.351,-179.7
+-123.587,-202.721
+-83.729,-218.203
+-42.3537,-225.932
+-0.955666,-226.016
+39.1088,-218.824
+76.6552,-204.933
+110.685,-185.061
+140.382,-160.025
+165.104,-130.699
+184.361,-97.9872
+197.802,-62.8042
+205.196,-26.0675
+
+
+/*pBahn pos1(0.0);
+	pBahn pos2(20.0);
+	pBahn pos3(40.0);
+	pBahn pos4(60.0);
+	pBahn pos5(80.0);
+	pBahn pos6(100.0);
+	pBahn pos7(120.0);
+	pBahn pos8(140.0);
+	pBahn pos9(160.0);
+	pBahn pos10(180.0);
+	pBahn pos11(200.0);
+	pBahn pos12(220.0);
+	pBahn pos13(240.0);
+	pBahn pos14(260.0);
+	pBahn pos15(280.0);
+	pBahn pos16(300.0);
+	pBahn pos17(320.0);
+	pBahn pos18(340.0);
+	pBahn pos19(360.0);
+	pBahn pos20(380.0);
+	pBahn pos21(400.0);
+	pBahn pos22(420.0);
+	pBahn pos23(440.0);
+	pBahn pos24(460.0);
+	pBahn pos25(480.0);
+	pBahn pos26(500.0);
+	pBahn pos27(520.0);
+	pBahn pos28(540.0);
+	pBahn pos29(560.0);
+	pBahn pos30(580.0);
+	pBahn pos31(600.0);
+	pBahn pos32(620.0);
+	pBahn pos33(640.0);
+	pBahn pos34(660.0);
+	pBahn pos35(680.0);
+
+	xy_pos = pos1.getKoordinaten();
+	cout << xy_pos[0] << "," << xy_pos[1] << endl;
+	
+	xy_pos = pos2.getKoordinaten();
+	cout << xy_pos[0] << "," << xy_pos[1] << endl;
+
+	xy_pos = pos3.getKoordinaten();
+	cout << xy_pos[0] << "," << xy_pos[1] << endl;
+
+	xy_pos = pos4.getKoordinaten();
+	cout << xy_pos[0] << "," << xy_pos[1] << endl;
+
+	xy_pos = pos5.getKoordinaten();
+	cout << xy_pos[0] << "," << xy_pos[1] << endl;
+
+	xy_pos = pos6.getKoordinaten();
+	cout << xy_pos[0] << "," << xy_pos[1] << endl;
+
+	xy_pos = pos7.getKoordinaten();
+	cout << xy_pos[0] << "," << xy_pos[1] << endl;
+
+	xy_pos = pos8.getKoordinaten();
+	cout << xy_pos[0] << "," << xy_pos[1] << endl;
+
+	xy_pos = pos9.getKoordinaten();
+	cout << xy_pos[0] << "," << xy_pos[1] << endl;
+
+	xy_pos = pos10.getKoordinaten();
+	cout << xy_pos[0] << "," << xy_pos[1] << endl;
+
+	xy_pos = pos11.getKoordinaten();
+	cout << xy_pos[0] << "," << xy_pos[1] << endl;
+
+	xy_pos = pos12.getKoordinaten();
+	cout << xy_pos[0] << "," << xy_pos[1] << endl;
+
+	xy_pos = pos13.getKoordinaten();
+	cout << xy_pos[0] << "," << xy_pos[1] << endl;
+
+	xy_pos = pos14.getKoordinaten();
+	cout << xy_pos[0] << "," << xy_pos[1] << endl;
+
+	xy_pos = pos15.getKoordinaten();
+	cout << xy_pos[0] << "," << xy_pos[1] << endl;
+
+	xy_pos = pos16.getKoordinaten();
+	cout << xy_pos[0] << "," << xy_pos[1] << endl;
+
+	xy_pos = pos17.getKoordinaten();
+	cout << xy_pos[0] << "," << xy_pos[1] << endl;
+
+	xy_pos = pos18.getKoordinaten();
+	cout << xy_pos[0] << "," << xy_pos[1] << endl;
+
+	xy_pos = pos19.getKoordinaten();
+	cout << xy_pos[0] << "," << xy_pos[1] << endl;
+
+	xy_pos = pos20.getKoordinaten();
+	cout << xy_pos[0] << "," << xy_pos[1] << endl;
+
+	xy_pos = pos21.getKoordinaten();
+	cout << xy_pos[0] << "," << xy_pos[1] << endl;
+
+	xy_pos = pos22.getKoordinaten();
+	cout << xy_pos[0] << "," << xy_pos[1] << endl;
+
+	xy_pos = pos23.getKoordinaten();
+	cout << xy_pos[0] << "," << xy_pos[1] << endl;
+
+	xy_pos = pos24.getKoordinaten();
+	cout << xy_pos[0] << "," << xy_pos[1] << endl;
+
+	xy_pos = pos25.getKoordinaten();
+	cout << xy_pos[0] << "," << xy_pos[1] << endl;
+
+	xy_pos = pos26.getKoordinaten();
+	cout << xy_pos[0] << "," << xy_pos[1] << endl;
+
+	xy_pos = pos27.getKoordinaten();
+	cout << xy_pos[0] << "," << xy_pos[1] << endl;
+
+	xy_pos = pos28.getKoordinaten();
+	cout << xy_pos[0] << "," << xy_pos[1] << endl;
+
+	xy_pos = pos29.getKoordinaten();
+	cout << xy_pos[0] << "," << xy_pos[1] << endl;
+
+	xy_pos = pos30.getKoordinaten();
+	cout << xy_pos[0] << "," << xy_pos[1] << endl;
+
+	xy_pos = pos31.getKoordinaten();
+	cout << xy_pos[0] << "," << xy_pos[1] << endl;
+
+	xy_pos = pos32.getKoordinaten();
+	cout << xy_pos[0] << "," << xy_pos[1] << endl;
+
+	xy_pos = pos33.getKoordinaten();
+	cout << xy_pos[0] << "," << xy_pos[1] << endl;
+
+	xy_pos = pos34.getKoordinaten();
+	cout << xy_pos[0] << "," << xy_pos[1] << endl;
+
+	xy_pos = pos35.getKoordinaten();
+	cout << xy_pos[0] << "," << xy_pos[1] << endl;*/
+
+	//actDate now;
+
+
+
+
