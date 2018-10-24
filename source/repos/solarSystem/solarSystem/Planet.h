@@ -25,14 +25,7 @@ private:
 		
 public:
 	static int deltaT;
-	/*
-	pBahn();
-	pBahn(long double);
-	pBahn(long double, long double);
-	pBahn(long double, long double, double);
-	pBahn(long double, long double, double, double);							
-	pBahn(std::string const, long double, long double, double, double);
-	*/
+	
 	Planet(std::string const, long double, long double, double, double, Datum);	//Konstruktor
 	
 	void init_Pbahn(void);														//Initialisierung der Planetenposition und Berechnung der Bahndaten durch Iteration

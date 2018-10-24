@@ -10,11 +10,6 @@ using namespace std;
 
 int Planet::deltaT = 0;
 
-//pBahn::pBahn() { }
-//pBahn::pBahn(long double aChse ) { }
-//pBahn::pBahn(long double aChse, long double rad) { }
-//pBahn::pBahn(long double aChse, long double rad, double eXzentr) { }
-//pBahn::pBahn(long double aChse, long double rad, double eXzentr, double echtAnom) : a(aChse), r(rad), epsilon(eXzentr), alpha(echtAnom) { }
 Planet::Planet(std::string const n, long double aChse, long double rad, double echtAnom, double eXzentr, Datum initD) 
 		: a(aChse), r(rad), epsilon(eXzentr), alpha(echtAnom), pName(n), d_ephim(initD)   {
 		init_T = this->diffTime(initD);
@@ -103,7 +98,7 @@ std::vector<long double> Planet::process_bahnCalc(Datum datX) {
 		vx_dthlb = vx_dthlb + ax_neu * Dt;
 		vy_dthlb = vy_dthlb + ay_neu * Dt;
 
-		actPDat.d_str += sqrt( pow((x_neu-y_neu), 2.0) + pow((y_neu - y_alt), 2.0 ));					// Berechnung der zurückgelegten Strecke (Meter)
+		actPDat.d_str += sqrt( pow((x_neu-x_alt), 2.0) + pow((y_neu - y_alt), 2.0 ));					// Berechnung der zurückgelegten Strecke (Meter)
 
 		x_alt = x_neu;
 		y_alt = y_neu;
@@ -133,7 +128,7 @@ std::vector<long double> Planet::process_bahnCalc() {
 		vx_dthlb = vx_dthlb + ax_neu * Dt;
 		vy_dthlb = vy_dthlb + ay_neu * Dt;
 
-		actPDat.d_str += sqrt( pow((x_neu-y_neu), 2.0) + pow((y_neu - y_alt), 2.0 ));
+		actPDat.d_str += sqrt( pow((x_neu-x_alt), 2.0) + pow((y_neu - y_alt), 2.0 ));
 
 		x_alt = x_neu;
 		y_alt = y_neu;		

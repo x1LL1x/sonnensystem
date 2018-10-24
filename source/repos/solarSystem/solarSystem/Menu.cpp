@@ -81,8 +81,8 @@ void Menu::callMenu() {
 		else if (1<=menRoll && menRoll<=8){
 			Planet entry_Planet(p_Name, gr_hA, r_Abst, e_Anom, n_Exz, ephem);	// Planet-Objekt erstellen und mit den Daten aus dem .CSV-File initialisieren.
 			v_enrtyPl = entry_Planet.process_bahnCalc();							// einstiegs Vektor mit den Daten von entry_Planet-Objekt belegen
-			cout << "\nheutige Position :\nX:" << v_enrtyPl[0] << "  Y:" << v_enrtyPl[1] << "\nderzeitige Entfernung zur Sonne: " << v_enrtyPl[2] << " km" << endl;
-			cout << "momentane Geschwindigkeit: " << sqrt( pow(v_enrtyPl[3], 2.0) + pow(v_enrtyPl[4], 2.0) )<<"m/s"<<endl;;
+			cout << "\nheutige Position :\nX:" << v_enrtyPl[0] << "  Y:" << v_enrtyPl[1] << "\nderzeitige Entfernung zur Sonne: " << v_enrtyPl[2] /1000 << " km" << endl;
+			cout << "momentane Geschwindigkeit: " << sqrt( pow(v_enrtyPl[3], 2.0) + pow(v_enrtyPl[4], 2.0) )<<"m/s"<<endl;
 			putData(v_enrtyPl);
 			
 			cout << "\nBitte Datum fuer neue Position eingeben (yy, mm, dd) ";  // , oder Programm beenden mit X: ";			//int eXit; cin >> eXit;
@@ -152,17 +152,9 @@ void Menu::setInitData(int x) {
 	}
 }
 
-//template <typename T>
 void Menu::putData(vector<long double> vec) {
 	outfile="planet_Positions.csv";
 	ofstream outPt(outfile, ios_base::out | ios_base::app);
-	
-	//outPt.open( outfile, std::ios::out | ((cnt_zl) ? std::ios::app : std::ios::trunc));
-	//for( ;first != last; ) {
-	//	outPt << *first;
-	//	if(first!=last) { outPt<<komma; }
-	//}
-	//for(int i=1; i<=cnt_zl; ++i) outPt<<"\n"; 
 	outPt <<"\n"<< p_Name <<":"<< zeitPtX.getTag() <<"."<<zeitPtX.getMonat()<<"."<<zeitPtX.getJahr()<<" : ";
 	for(const auto &o : vec) { outPt << o << "\t\t";}
 	outPt.close();

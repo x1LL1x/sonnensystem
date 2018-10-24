@@ -20,10 +20,8 @@ public:
 	Menu();
 	
 	void callMenu();
-	void getData();						//Methode geht Zeile für Zeile durch eine .CSV-Datei und speichert die Werte in einem 2x2 Vektor --> einlesen
-	void setInitData(int);				//Initialwerte für einzelne Planeten den Eingangsparametern (gr. Halbachse, usw...) zuweisen
-	
-	//template<typename T> 
+	void getData();										//Methode geht Zeile für Zeile durch eine .CSV-Datei und speichert die Werte in einem 2x2 Vektor --> einlesen
+	void setInitData(int);								//Initialwerte für einzelne Planeten den Eingangsparametern (gr. Halbachse, usw...) zuweisen
 	void putData(std::vector<long double> const);				//Methode zum Schreiben in .CSV-Datei
 };
 #endif
