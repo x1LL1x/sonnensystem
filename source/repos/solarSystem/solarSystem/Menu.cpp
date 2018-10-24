@@ -39,31 +39,31 @@ void Menu::callMenu() {
 			break;
 		case 2: cout << "Venus: " << endl;
 			cout << "Groesse (Durchmesser): 12.103,6km \nMasse: 4,869*10^24kg \nmittl.Entfernung zur Sonne: " 
-			<<  gr_hA/1000 <<"\kmnSchwerkraft: 8,87 m/s^2" << "\nRotationsperiode: 243d 27min" << endl; 
+			<<  gr_hA/1000 <<"km\nSchwerkraft: 8,87 m/s^2" << "\nRotationsperiode: 243d 27min" << endl; 
 			break;
 		case 3: cout << "Erde: " << endl;
 			cout << "Groesse (Durchmesser): 12.756,32km \nMasse: 5,974*10^24kg \nmittl.Entfernung zur Sonne: " 
-			<<  gr_hA/1000 <<"\kmnSchwerkraft: 9,81 m/s^2" << "\nRotationsperiode: 23h 56min 4,1s\nMonde: 1(Mond)" << endl;
+			<<  gr_hA/1000 <<"km\nSchwerkraft: 9,81 m/s^2" << "\nRotationsperiode: 23h 56min 4,1s\nMonde: 1(Mond)" << endl;
 			break;
 		case 4: cout << "Mars: " << endl;
 			cout << "Groesse (Durchmesser): 6.792,4km \nMasse: 6,419*10^23kg \nmittl.Entfernung zur Sonne: " 
-			<<  gr_hA/1000 <<"\kmnSchwerkraft: 3,69 m/s^2" << "\nRotationsperiode: 24h 37min 22s\nMonde: 2 (Phobos und Deimos)" << endl;
+			<<  gr_hA/1000 <<"km\nSchwerkraft: 3,69 m/s^2" << "\nRotationsperiode: 24h 37min 22s\nMonde: 2 (Phobos und Deimos)" << endl;
 			break;
 		case 5: cout << "Jupiter: " << endl;
 			cout << "Groesse (Durchmesser): 142.984km \nMasse: 1,899*10^27kg \nmittl.Entfernung zur Sonne: " 
-			<<  gr_hA/1000 <<"\kmnSchwerkraft: 24,79 m/s^2" << "\nRotationsperiode: 9h 55min 30s\nAnzahl d. Monde: 69" << endl;
+			<<  gr_hA/1000 <<"km\nSchwerkraft: 24,79 m/s^2" << "\nRotationsperiode: 9h 55min 30s\nAnzahl d. Monde: 69" << endl;
 			break;
 		case 6: cout << "Saturn: " << endl ;
 			cout << "Groesse (Durchmesser): 120.536km \nMasse: 5,685*10^26kg \nmittl.Entfernung zur Sonne: " 
-			<<  gr_hA/1000 <<"\kmnSchwerkraft: 10,44 m/s^2" << "\nRotationsperiode: 10h 33min\n Anz. d. Monde: 62 + Ringsystem " << endl;
+			<<  gr_hA/1000 <<"km\nSchwerkraft: 10,44 m/s^2" << "\nRotationsperiode: 10h 33min\n Anz. d. Monde: 62 + Ringsystem " << endl;
 			break;
 		case 7: cout << "Uranus: " << endl;
 			cout << "Groesse (Durchmesser): 51.118km \nMasse: 8,683*10^25kg \nmittl.Entfernung zur Sonne: " 
-			<<  gr_hA/1000 <<"\kmnSchwerkraft: 8,87 m/s^2" << "\nRotationsperiode: 17h 14min 24s\nAnz. d. Monde: 27 + Ringsystem" << endl;
+			<<  gr_hA/1000 <<"km\nSchwerkraft: 8,87 m/s^2" << "\nRotationsperiode: 17h 14min 24s\nAnz. d. Monde: 27 + Ringsystem" << endl;
 			break;
 		case 8: cout << "Neptun: " << endl ;
 			cout << "Groesse (Durchmesser): 49.528km \nMasse: 1,0243*10^26kg \nmittl.Entfernung zur Sonne: " 
-			<<  gr_hA/1000 <<"\kmnSchwerkraft: 11,15 m/s^2" << "\nRotationsperiode: 15h 57min 59s\Anz. d. Monde: 14 + Ringsystem" << endl;
+			<<  gr_hA/1000 <<"km\nSchwerkraft: 11,15 m/s^2" << "\nRotationsperiode: 15h 57min 59s\Anz. d. Monde: 14 + Ringsystem" << endl;
 			break;
 		case 9: cout << "Pluto:";
 			cout << "Groesse (Durchmesser): 2374km \nMasse: 1,303*10^22kg \nmittl.Entfernung zur Sonne: 5,906376*10^9km"; 
